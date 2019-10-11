@@ -1,0 +1,2 @@
+- `Sources`目录下包含了本SDK的所有资源与代码文件，将它们添加到目标工程并`import "WebARSDK.h" `即可使用。
+- SDK需要调用系统相机，因此请在工程的`info.plist`中添加`NSCameraUsageDescription`。

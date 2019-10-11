@@ -1,0 +1,20 @@
+/* 
+  WEBARView.strings
+  WebARSDK
+
+  Created by weily on 2018/11/13.
+  Copyright © 2018 kivisense. All rights reserved.
+*/
+
+"No Camera Permisson" = "没有相机权限";
+"Torch Not Supported" = "不支持手电筒";
+"Flash Not Supproted" = "不支持闪光灯";
+"Focus Not Supproted" = "不支持聚焦";
+"Didn't find the camera" = "未找到摄像头";
+"OK" = "确定";
+"Cancel" = "取消";
+"messages" = "来自网页的消息";
+"cancel" = "取消";
+"confirm" = "确定";
+"input" = "输入文字消息";
+"param error" = "参数错误";

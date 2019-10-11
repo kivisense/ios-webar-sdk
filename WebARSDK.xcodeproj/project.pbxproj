@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20824032191384200074CA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20824022191384200074CA1 /* AppDelegate.m */; };
+		B20824092191384200074CA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20824072191384200074CA1 /* Main.storyboard */; };
+		B208240B2191384400074CA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B208240A2191384400074CA1 /* Assets.xcassets */; };
+		B208240E2191384400074CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B208240C2191384400074CA1 /* LaunchScreen.storyboard */; };
+		B20824112191384400074CA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B20824102191384400074CA1 /* main.m */; };
+		B208241B2191384400074CA1 /* WebARSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B208241A2191384400074CA1 /* WebARSDKTests.m */; };
+		B208242D219141A100074CA1 /* WEBARCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = B208242C219141A100074CA1 /* WEBARCameraView.m */; };
+		B21E85B2219AC086004A083B /* WEBARView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B21E85B1219AC086004A083B /* WEBARView.bundle */; };
+		B23C6D3B21E99391007D7344 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23C6D2C21E99391007D7344 /* ViewController.m */; };
+		B249DE13234ED18200DC3C8C /* WEBARView.m in Sources */ = {isa = PBXBuildFile; fileRef = B249DE12234ED18200DC3C8C /* WEBARView.m */; };
+		B249DE16234ED8AB00DC3C8C /* WEBARBundleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B249DE15234ED8AB00DC3C8C /* WEBARBundleInfo.m */; };
+		B28A8FEB234EDF0C00C25385 /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28A8FEA234EDF0B00C25385 /* ARViewController.m */; };
+		B2DAF95E21A4F2F8007289DC /* UIImage+WEBARClip.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DAF95D21A4F2F8007289DC /* UIImage+WEBARClip.m */; };
+		B2DAF96021A56087007289DC /* WebARViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DAF95F21A56087007289DC /* WebARViewControllerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B20824172191384400074CA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20823F62191384200074CA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20823FD2191384200074CA1;
+			remoteInfo = WebARSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B20823FE2191384200074CA1 /* WebAR-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebAR-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20824012191384200074CA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B20824022191384200074CA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B20824082191384200074CA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B208240A2191384400074CA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B208240D2191384400074CA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B208240F2191384400074CA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20824102191384400074CA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B20824162191384400074CA1 /* WebARSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebARSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B208241A2191384400074CA1 /* WebARSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebARSDKTests.m; sourceTree = "<group>"; };
+		B208241C2191384400074CA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B208242B219141A100074CA1 /* WEBARCameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEBARCameraView.h; sourceTree = "<group>"; };
+		B208242C219141A100074CA1 /* WEBARCameraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEBARCameraView.m; sourceTree = "<group>"; };
+		B21E85B1219AC086004A083B /* WEBARView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WEBARView.bundle; sourceTree = "<group>"; };
+		B23C6D2C21E99391007D7344 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B23C6D2E21E99391007D7344 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B249DE11234ED18200DC3C8C /* WEBARView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEBARView.h; sourceTree = "<group>"; };
+		B249DE12234ED18200DC3C8C /* WEBARView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEBARView.m; sourceTree = "<group>"; };
+		B249DE14234ED8AB00DC3C8C /* WEBARBundleInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEBARBundleInfo.h; sourceTree = "<group>"; };
+		B249DE15234ED8AB00DC3C8C /* WEBARBundleInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEBARBundleInfo.m; sourceTree = "<group>"; };
+		B28A8FE9234EDF0B00C25385 /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
+		B28A8FEA234EDF0B00C25385 /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
+		B2C670EC21917BA80015AAFB /* WebARSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebARSDK.h; sourceTree = "<group>"; };
+		B2DAF95C21A4F2F8007289DC /* UIImage+WEBARClip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+WEBARClip.h"; sourceTree = "<group>"; };
+		B2DAF95D21A4F2F8007289DC /* UIImage+WEBARClip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WEBARClip.m"; sourceTree = "<group>"; };
+		B2DAF95F21A56087007289DC /* WebARViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebARViewControllerTests.m; sourceTree = "<group>"; };
+		B2FD850C219BBAEF00D11070 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20823FB2191384200074CA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20824132191384400074CA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BE93742D42A378F6C97885D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B20823F52191384200074CA1 = {
+			isa = PBXGroup;
+			children = (
+				B20824002191384200074CA1 /* WebARSDK */,
+				B20824192191384400074CA1 /* WebARSDKTests */,
+				B20823FF2191384200074CA1 /* Products */,
+				1BE93742D42A378F6C97885D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B20823FF2191384200074CA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20823FE2191384200074CA1 /* WebAR-Sample.app */,
+				B20824162191384400074CA1 /* WebARSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B20824002191384200074CA1 /* WebARSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B23C6D2A21E99391007D7344 /* Controller */,
+				B208242521913F4C00074CA1 /* Sources */,
+				B20824012191384200074CA1 /* AppDelegate.h */,
+				B20824022191384200074CA1 /* AppDelegate.m */,
+				B20824072191384200074CA1 /* Main.storyboard */,
+				B208240A2191384400074CA1 /* Assets.xcassets */,
+				B208240C2191384400074CA1 /* LaunchScreen.storyboard */,
+				B208240F2191384400074CA1 /* Info.plist */,
+				B20824102191384400074CA1 /* main.m */,
+			);
+			path = WebARSDK;
+			sourceTree = "<group>";
+		};
+		B20824192191384400074CA1 /* WebARSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				B208241A2191384400074CA1 /* WebARSDKTests.m */,
+				B2DAF95F21A56087007289DC /* WebARViewControllerTests.m */,
+				B208241C2191384400074CA1 /* Info.plist */,
+			);
+			path = WebARSDKTests;
+			sourceTree = "<group>";
+		};
+		B208242521913F4C00074CA1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B2C670EC21917BA80015AAFB /* WebARSDK.h */,
+				B249DE11234ED18200DC3C8C /* WEBARView.h */,
+				B249DE12234ED18200DC3C8C /* WEBARView.m */,
+				B208242B219141A100074CA1 /* WEBARCameraView.h */,
+				B208242C219141A100074CA1 /* WEBARCameraView.m */,
+				B249DE14234ED8AB00DC3C8C /* WEBARBundleInfo.h */,
+				B249DE15234ED8AB00DC3C8C /* WEBARBundleInfo.m */,
+				B2DAF95C21A4F2F8007289DC /* UIImage+WEBARClip.h */,
+				B2DAF95D21A4F2F8007289DC /* UIImage+WEBARClip.m */,
+				B21E85B1219AC086004A083B /* WEBARView.bundle */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B23C6D2A21E99391007D7344 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B23C6D2E21E99391007D7344 /* ViewController.h */,
+				B23C6D2C21E99391007D7344 /* ViewController.m */,
+				B28A8FE9234EDF0B00C25385 /* ARViewController.h */,
+				B28A8FEA234EDF0B00C25385 /* ARViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20823FD2191384200074CA1 /* WebARSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B208241F2191384400074CA1 /* Build configuration list for PBXNativeTarget "WebARSDK" */;
+			buildPhases = (
+				B20823FA2191384200074CA1 /* Sources */,
+				B20823FB2191384200074CA1 /* Frameworks */,
+				B20823FC2191384200074CA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebARSDK;
+			productName = WebARSDK;
+			productReference = B20823FE2191384200074CA1 /* WebAR-Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B20824152191384400074CA1 /* WebARSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20824222191384400074CA1 /* Build configuration list for PBXNativeTarget "WebARSDKTests" */;
+			buildPhases = (
+				B20824122191384400074CA1 /* Sources */,
+				B20824132191384400074CA1 /* Frameworks */,
+				B20824142191384400074CA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20824182191384400074CA1 /* PBXTargetDependency */,
+			);
+			name = WebARSDKTests;
+			productName = WebARSDKTests;
+			productReference = B20824162191384400074CA1 /* WebARSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20823F62191384200074CA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = kivisense;
+				TargetAttributes = {
+					B20823FD2191384200074CA1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B20824152191384400074CA1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B20823FD2191384200074CA1;
+					};
+				};
+			};
+			buildConfigurationList = B20823F92191384200074CA1 /* Build configuration list for PBXProject "WebARSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = B20823F52191384200074CA1;
+			productRefGroup = B20823FF2191384200074CA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20823FD2191384200074CA1 /* WebARSDK */,
+				B20824152191384400074CA1 /* WebARSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20823FC2191384200074CA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B208240E2191384400074CA1 /* LaunchScreen.storyboard in Resources */,
+				B208240B2191384400074CA1 /* Assets.xcassets in Resources */,
+				B21E85B2219AC086004A083B /* WEBARView.bundle in Resources */,
+				B20824092191384200074CA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20824142191384400074CA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20823FA2191384200074CA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23C6D3B21E99391007D7344 /* ViewController.m in Sources */,
+				B249DE13234ED18200DC3C8C /* WEBARView.m in Sources */,
+				B20824112191384400074CA1 /* main.m in Sources */,
+				B28A8FEB234EDF0C00C25385 /* ARViewController.m in Sources */,
+				B249DE16234ED8AB00DC3C8C /* WEBARBundleInfo.m in Sources */,
+				B2DAF95E21A4F2F8007289DC /* UIImage+WEBARClip.m in Sources */,
+				B20824032191384200074CA1 /* AppDelegate.m in Sources */,
+				B208242D219141A100074CA1 /* WEBARCameraView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20824122191384400074CA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DAF96021A56087007289DC /* WebARViewControllerTests.m in Sources */,
+				B208241B2191384400074CA1 /* WebARSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B20824182191384400074CA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20823FD2191384200074CA1 /* WebARSDK */;
+			targetProxy = B20824172191384400074CA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B20824072191384200074CA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20824082191384200074CA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B208240C2191384400074CA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B208240D2191384400074CA1 /* Base */,
+				B2FD850C219BBAEF00D11070 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B208241D2191384400074CA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B208241E2191384400074CA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20824202191384400074CA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = ERY78G3RMY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WebARSDK/RecordHelper",
+				);
+				INFOPLIST_FILE = WebARSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kivicube.webar.sample;
+				PRODUCT_NAME = "WebAR-Sample";
+				PROVISIONING_PROFILE_SPECIFIER = All.Developer;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B20824212191384400074CA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = ERY78G3RMY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WebARSDK/RecordHelper",
+				);
+				INFOPLIST_FILE = WebARSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kivicube.webar.sample;
+				PRODUCT_NAME = "WebAR-Sample";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard.InHouse;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B20824232191384400074CA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ERY78G3RMY;
+				INFOPLIST_FILE = WebARSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kivisense.WebARSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebARSDK.app/WebARSDK";
+			};
+			name = Debug;
+		};
+		B20824242191384400074CA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ERY78G3RMY;
+				INFOPLIST_FILE = WebARSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kivisense.WebARSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebARSDK.app/WebARSDK";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20823F92191384200074CA1 /* Build configuration list for PBXProject "WebARSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B208241D2191384400074CA1 /* Debug */,
+				B208241E2191384400074CA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B208241F2191384400074CA1 /* Build configuration list for PBXNativeTarget "WebARSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20824202191384400074CA1 /* Debug */,
+				B20824212191384400074CA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20824222191384400074CA1 /* Build configuration list for PBXNativeTarget "WebARSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20824232191384400074CA1 /* Debug */,
+				B20824242191384400074CA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B20823F62191384200074CA1 /* Project object */;
+}

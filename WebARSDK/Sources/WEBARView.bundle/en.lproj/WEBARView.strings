@@ -1,0 +1,20 @@
+/* 
+  WEBARView.strings
+  WebARSDK
+
+  Created by weily on 2018/11/13.
+  Copyright © 2018 kivisense. All rights reserved.
+*/
+
+"No Camera Permisson" = "No Camera Permisson";
+"Torch Not Supported" = "Torch Not Supported";
+"Flash Not Supproted" = "Flash Not Supproted";
+"Focus Not Supproted" = "Focus Not Supproted";
+"Didn't find the camera" = "Didn't find the camera";
+"OK" = "OK";
+"Cancel" = "Cancel";
+"messages" = "Messages from web page";
+"cancel" = "Cancel";
+"confirm" = "Confirm";
+"input" = "Input text content";
+"param error" = "param error";

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8El-eY-iv6">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="M2g-HV-687">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="IMd-D1-hyU" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g90-Bp-HHm"/>
+                        <viewControllerLayoutGuide type="bottom" id="T0a-wu-ljZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LeA-xp-zse">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPg-1d-42t">
+                                <rect key="frame" x="181.66666666666666" y="433" width="51" height="30"/>
+                                <state key="normal" title="打开AR"/>
+                                <connections>
+                                    <segue destination="FGw-EH-elu" kind="show" identifier="AR" id="JcI-z8-byV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入Kivicude场景Url地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gk9-b4-pm9">
+                                <rect key="frame" x="36" y="391" width="342" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xPg-1d-42t" firstAttribute="centerX" secondItem="LeA-xp-zse" secondAttribute="centerX" id="IWH-al-wEc"/>
+                            <constraint firstItem="xPg-1d-42t" firstAttribute="top" secondItem="gk9-b4-pm9" secondAttribute="bottom" constant="8" id="JOT-l3-PRj"/>
+                            <constraint firstItem="xPg-1d-42t" firstAttribute="centerY" secondItem="LeA-xp-zse" secondAttribute="centerY" id="fhS-39-hyx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gk9-b4-pm9" secondAttribute="trailing" constant="16" id="h7D-dM-96P"/>
+                            <constraint firstItem="gk9-b4-pm9" firstAttribute="leading" secondItem="LeA-xp-zse" secondAttribute="leadingMargin" constant="16" id="y3S-He-1G2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GAj-4F-dO9"/>
+                    <connections>
+                        <outlet property="textField" destination="gk9-b4-pm9" id="1dx-Xw-kW8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lBY-EA-deX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tnb-gR-RDx">
+            <objects>
+                <viewController id="FGw-EH-elu" customClass="ARViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fwv-7C-417"/>
+                        <viewControllerLayoutGuide type="bottom" id="cE2-Cg-MW5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YUo-pj-gE0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb4-Kb-pMe" customClass="WEBARView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LQ-CB-2CZ">
+                                <rect key="frame" x="36" y="64" width="31" height="30"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="backAction:" destination="FGw-EH-elu" eventType="touchUpInside" id="fwd-nO-8bs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eb4-Kb-pMe" firstAttribute="leading" secondItem="YUo-pj-gE0" secondAttribute="leading" id="2sv-8k-7te"/>
+                            <constraint firstItem="9LQ-CB-2CZ" firstAttribute="leading" secondItem="YUo-pj-gE0" secondAttribute="leadingMargin" constant="16" id="CC3-ax-LfM"/>
+                            <constraint firstItem="cE2-Cg-MW5" firstAttribute="top" secondItem="eb4-Kb-pMe" secondAttribute="bottom" id="Crx-Qw-t8R"/>
+                            <constraint firstItem="9LQ-CB-2CZ" firstAttribute="top" secondItem="fwv-7C-417" secondAttribute="bottom" constant="20" id="ESu-VL-5NQ"/>
+                            <constraint firstAttribute="trailing" secondItem="eb4-Kb-pMe" secondAttribute="trailing" id="bJl-qa-2Em"/>
+                            <constraint firstItem="eb4-Kb-pMe" firstAttribute="top" secondItem="fwv-7C-417" secondAttribute="bottom" id="ofe-zZ-V8i"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gnu-qM-HXv"/>
+                    <connections>
+                        <outlet property="textField" destination="gk9-b4-pm9" id="D1I-yP-z1p"/>
+                        <outlet property="webARView" destination="eb4-Kb-pMe" id="RXP-JS-wLj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14c-K9-9oN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631.8840579710147" y="132.58928571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wnQ-g3-JVL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="8El-eY-iv6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dLs-xU-40T">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WCZ-tI-pap">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="IMd-D1-hyU" kind="relationship" relationship="rootViewController" id="Efa-Y1-AA8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sB4-Cc-KCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
