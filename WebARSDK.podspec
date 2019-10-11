@@ -3,13 +3,13 @@ Pod::Spec.new do |spec|
   spec.version      = "1.0.0"
   spec.summary      = "WebARSDK"
   spec.homepage     = "https://github.com/kivisense/ios-webar-sdk"
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  spec.author       = { "isweal" => "liuliu1994@outlook.com" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.author       = { "kivicube" => "op@kivisense.com" }
 
   spec.platform     = :ios
   spec.platform     = :ios, "8.0"
 
-  spec.source       = { :git => "https://github.com/kivisense/ios-webar-sdk'", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/kivisense/ios-webar-sdk.git", :tag => "#{spec.version}" }
 
   spec.requires_arc = true
   spec.source_files = 'WebARSDK/Sources/**/*.{h,m}'
