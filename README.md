@@ -61,15 +61,3 @@ pod 'WebARSDK'
    
 
 更多详情可以参考工程中`ARViewController`类中的实现。
-
-## Demo
-
-- 体验链接
-
-  ![](images/QrCode.png)
-
-- 识别图
-
-  ![](images/51570790624_.pic.jpg)
-
-  
