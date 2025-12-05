@@ -1,3 +1,5 @@
+**注意：当前SDK已停止维护，可自行使用WKWebView加载Kivicube场景链接即可。可支持iOS >= 14.3，已具备不错的兼容性。**
+
 # WebARSDK
 
 - SDK需要系统的相机和相册权限，因此请在工程的`info.plist`中添加`NSCameraUsageDescription`和`NSPhotoLibraryAddUsageDescription`。
