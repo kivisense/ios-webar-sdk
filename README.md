@@ -1,4 +1,4 @@
-**注意：当前SDK已停止维护，可自行使用WKWebView加载Kivicube场景链接即可。可支持iOS >= 14.3，已具备不错的兼容性。**
+**注意：当前SDK已停止维护，可自行使用WKWebView加载Kivicube场景链接即可，参考：[https://github.com/kivisense/kivicube-ios-sample](https://github.com/kivisense/kivicube-ios-sample)**
 
 # WebARSDK
 
